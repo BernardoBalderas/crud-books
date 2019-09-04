@@ -2,7 +2,7 @@
   "name": "books-app",
   "version": "0.0.0",
   "scripts": {
-    "start": "build && node ./bin/www",
+    "start": "node ./bin/www",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
