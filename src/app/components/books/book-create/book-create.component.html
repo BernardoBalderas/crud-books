@@ -5,24 +5,28 @@
     </a>
   </div>
   <form [formGroup]="bookForm" (ngSubmit)="onFormSubmit(bookForm.value)">
+
     <mat-form-field class="example-full-width">
       <input matInput placeholder="ID" formControlName="id" [errorStateMatcher]="matcher">
       <mat-error>
         <span *ngIf="!bookForm.get('id').valid && bookForm.get('id').touched">Please enter ISBN</span>
       </mat-error>
     </mat-form-field>
+
     <mat-form-field class="example-full-width">
       <input matInput placeholder="Nombre" formControlName="nombre" [errorStateMatcher]="matcher">
       <mat-error>
         <span *ngIf="!bookForm.get('nombre').valid && bookForm.get('nombre').touched">Please enter Book Title</span>
       </mat-error>
     </mat-form-field>
+
     <mat-form-field class="example-full-width">
       <input matInput placeholder="Sexo" formControlName="sexo" [errorStateMatcher]="matcher">
       <mat-error>
         <span *ngIf="!bookForm.get('sexo').valid && bookForm.get('sexo').touched">Please enter Book Author</span>
       </mat-error>
     </mat-form-field>
+
     <mat-form-field class="example-full-width">
       <textarea matInput placeholder="Edad" formControlName="edad"
         [errorStateMatcher]="matcher"></textarea>
@@ -31,6 +35,7 @@
           Description</span>
       </mat-error>
     </mat-form-field>
+
     <mat-form-field class="example-full-width">
       <input matInput placeholder="Estado civil" formControlName="estado_civil" [errorStateMatcher]="matcher">
       <mat-error>
@@ -38,6 +43,7 @@
           Publisher</span>
       </mat-error>
     </mat-form-field>
+
     <mat-form-field class="example-full-width">
       <input matInput placeholder="Telefono" formControlName="telefono" [errorStateMatcher]="matcher">
       <mat-error>
@@ -45,6 +51,7 @@
           Published Year</span>
       </mat-error>
     </mat-form-field>
+
     <mat-form-field class="example-full-width">
       <input matInput placeholder="Escolaridad" formControlName="escolaridad" [errorStateMatcher]="matcher">
       <mat-error>
@@ -52,6 +59,7 @@
           Published Year</span>
       </mat-error>
     </mat-form-field>
+
     <mat-form-field class="example-full-width">
       <input matInput placeholder="Ocupacion" formControlName="ocupacion" [errorStateMatcher]="matcher">
       <mat-error>
@@ -83,6 +91,7 @@
           Apoyo Solicitado</span>
       </mat-error>
     </mat-form-field>
+
     <mat-form-field class="example-full-width">
       <input matInput placeholder="fecha" formControlName="fecha" [errorStateMatcher]="matcher">
       <mat-error>
@@ -90,6 +99,7 @@
           Published Year</span>
       </mat-error>
     </mat-form-field>
+    
     <div class="button-row">
       <button type="submit" [disabled]="!bookForm.valid" mat-raised-button color="primary"><mat-icon>save</mat-icon></button>
       </div>
