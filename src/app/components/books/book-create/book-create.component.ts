@@ -11,12 +11,19 @@ import { ApiService } from 'src/app/services/api.service';
 export class BookCreateComponent implements OnInit {
 
   bookForm: FormGroup;
-  isbn: string = '';
-  title: string = '';
-  description: string = '';
-  author: string = '';
-  publisher: string = '';
-  published_year: string = '';
+  id: string = '';
+  nombre: string = '';
+  sexo: string = '';
+  edad: string = '';
+  estado_civil: string = '';
+  telefono: string = '';
+  escolaridad: string = '';
+  ocupacion: string = '';
+  domicilio: string = '';
+  correo: string = '';
+  apoyo_solicitado: string = '';
+  fecha: string = '';
+  published_year: string ='';
 
   constructor(
     private router: Router,
@@ -25,11 +32,18 @@ export class BookCreateComponent implements OnInit {
 
   ngOnInit() {
     this.bookForm = this.formBuilder.group({
-      'isbn': [null, Validators.required],
-      'title': [null, Validators.required],
-      'description': [null, Validators.required],
-      'author': [null, Validators.required],
-      'publisher': [null, Validators.required],
+      'id': [null, Validators.required],
+      'nombre': [null, Validators.required],
+      'sexo': [null, Validators.required],
+      'edad': [null, Validators.required],
+      'estado_civil': [null, Validators.required],
+      'telefono': [null, Validators.required],
+      'escolaridad': [null, Validators.required],
+      'ocupacion': [null, Validators.required],
+      'domicilio': [null, Validators.required],
+      'correo': [null, Validators.required],
+      'apoyo_solicitado': [null, Validators.required],
+      'fecha': [null, Validators.required],
       'published_year': [null, Validators.required]
     });
   }

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/bookdb', {
+mongoose.connect('mongodb://localhost/encuestas', {
   useCreateIndex: true,
   useNewUrlParser: true,
   useFindAndModify: false

@@ -12,12 +12,17 @@ export class BookEditComponent implements OnInit {
 
   bookForm: FormGroup;
   id: string = '';
-  isbn: string = '';
-  title: string = '';
-  description: string = '';
-  author: string = '';
-  publisher: string = '';
-  published_year: string = '';
+  nombre: string = '';
+  sexo: string = '';
+  edad: string = '';
+  estado_civil: string = '';
+  escolaridad: string = '';
+  ocupacion: string = '';
+  domicilio: string = '';
+  telefono: string = '';
+  correo: string = '';
+  apoyo_solicitado: string = '';
+  fecha: string = '';
 
   constructor(
     private router: Router,
@@ -28,12 +33,18 @@ export class BookEditComponent implements OnInit {
   ngOnInit() {
     this.getBook(this.route.snapshot.params['id']);
     this.bookForm = this.formBuilder.group({
-      'isbn': [null, Validators.required],
-      'title': [null, Validators.required],
-      'description': [null, Validators.required],
-      'author': [null, Validators.required],
-      'publisher': [null, Validators.required],
-      'published_year': [null, Validators.required]
+      'id': [null, Validators.required],
+      'nombre': [null, Validators.required],
+      'sexo': [null, Validators.required],
+      'edad': [null, Validators.required],
+      'estado_civil': [null, Validators.required],
+      'escolaridad': [null, Validators.required],
+      'ocupacion': [null, Validators.required],
+      'domicilio': [null, Validators.required],
+      'telefono': [null, Validators.required],
+      'correo': [null, Validators.required],
+      'apoyo_solicitado': [null, Validators.required],
+      'fecha': [null, Validators.required]
     });
   }
 
@@ -41,12 +52,18 @@ export class BookEditComponent implements OnInit {
     this.api.getBook(id).subscribe(data => {
       this.id = data._id;
       this.bookForm.setValue({
-        isbn: data.isbn,
-        title: data.title,
-        description: data.description,
-        author: data.author,
-        publisher: data.publisher,
-        published_year: data.published_year
+        id: data.id,
+        nombre: data.nombre,
+        sexo: data.sexo,
+        edad: data.edad,
+        estado_civil: data.estado_civil,
+        escolaridad: data.escolaridad,
+        ocupacion : data.ocupacion,
+        domicilio: data.domicilio,
+        telefono: data.telefono,
+        correo: data.correo,
+        apoyo_solicitado: data.apoyo_solicitado
+        
       });
     });
   }

@@ -6,29 +6,88 @@
   </div>
   <form [formGroup]="bookForm" (ngSubmit)="onFormSubmit(bookForm.value)">
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="ISBN" formControlName="isbn" [errorStateMatcher]="matcher">
+      <input matInput placeholder="ID" formControlName="id" [errorStateMatcher]="matcher">
       <mat-error>
-        <span *ngIf="!bookForm.get('isbn').valid && bookForm.get('isbn').touched">Please enter ISBN</span>
+        <span *ngIf="!bookForm.get('id').valid && bookForm.get('id').touched">Please enter ISBN</span>
       </mat-error>
     </mat-form-field>
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Title" formControlName="title" [errorStateMatcher]="matcher">
+      <input matInput placeholder="Nombre" formControlName="nombre" [errorStateMatcher]="matcher">
       <mat-error>
-        <span *ngIf="!bookForm.get('title').valid && bookForm.get('title').touched">Please enter Book Title</span>
+        <span *ngIf="!bookForm.get('nombre').valid && bookForm.get('nombre').touched">Please enter Book Title</span>
       </mat-error>
     </mat-form-field>
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Author" formControlName="author" [errorStateMatcher]="matcher">
+      <input matInput placeholder="Sexo" formControlName="sexo" [errorStateMatcher]="matcher">
       <mat-error>
-        <span *ngIf="!bookForm.get('author').valid && bookForm.get('author').touched">Please enter Book Author</span>
+        <span *ngIf="!bookForm.get('sexo').valid && bookForm.get('sexo').touched">Please enter Book Author</span>
       </mat-error>
     </mat-form-field>
     <mat-form-field class="example-full-width">
-      <textarea matInput placeholder="Description" formControlName="description"
+      <textarea matInput placeholder="Edad" formControlName="edad"
         [errorStateMatcher]="matcher"></textarea>
       <mat-error>
-        <span *ngIf="!bookForm.get('description').valid && bookForm.get('description').touched">Please enter Book
+        <span *ngIf="!bookForm.get('edad').valid && bookForm.get('edad').touched">Please enter Book
           Description</span>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Estado civil" formControlName="estado_civil" [errorStateMatcher]="matcher">
+      <mat-error>
+        <span *ngIf="!bookForm.get('estado_civil').valid && bookForm.get('estado_civil').touched">Please enter
+          Publisher</span>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Telefono" formControlName="telefono" [errorStateMatcher]="matcher">
+      <mat-error>
+        <span *ngIf="!bookForm.get('telefono').valid && bookForm.get('telefono').touched">Please enter
+          Published Year</span>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Escolaridad" formControlName="escolaridad" [errorStateMatcher]="matcher">
+      <mat-error>
+        <span *ngIf="!bookForm.get('escolaridad').valid && bookForm.get('escolaridad').touched">Please enter
+          Published Year</span>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Ocupacion" formControlName="ocupacion" [errorStateMatcher]="matcher">
+      <mat-error>
+        <span *ngIf="!bookForm.get('ocupacion').valid && bookForm.get('ocupacion').touched">Favor de ingresar
+          Ocupacion</span>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Domicilio" formControlName="domicilio" [errorStateMatcher]="matcher">
+      <mat-error>
+        <span *ngIf="!bookForm.get('domicilio').valid && bookForm.get('domicilio').touched">Favor de ingresar
+          Domicilio</span>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Correo" formControlName="correo" [errorStateMatcher]="matcher">
+      <mat-error>
+        <span *ngIf="!bookForm.get('correo').valid && bookForm.get('correo').touched">Favor de ingresar
+          Correo</span>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Apoyo solicitado" formControlName="apoyo_solicitado" [errorStateMatcher]="matcher">
+      <mat-error>
+        <span *ngIf="!bookForm.get('apoyo_solicitado').valid && bookForm.get('apoyo_solicitado').touched">Favor de ingresar
+          Apoyo Solicitado</span>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="fecha" formControlName="fecha" [errorStateMatcher]="matcher">
+      <mat-error>
+        <span *ngIf="!bookForm.get('fecha').valid && bookForm.get('fecha').touched">Please enter
+          Published Year</span>
       </mat-error>
     </mat-form-field>
     <mat-form-field class="example-full-width">
@@ -36,13 +95,6 @@
       <mat-error>
         <span *ngIf="!bookForm.get('publisher').valid && bookForm.get('publisher').touched">Please enter
           Publisher</span>
-      </mat-error>
-    </mat-form-field>
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="Published Year" formControlName="published_year" [errorStateMatcher]="matcher">
-      <mat-error>
-        <span *ngIf="!bookForm.get('published_year').valid && bookForm.get('published_year').touched">Please enter
-          Published Year</span>
       </mat-error>
     </mat-form-field>
     <div class="button-row">

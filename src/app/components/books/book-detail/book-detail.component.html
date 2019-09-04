@@ -3,21 +3,25 @@
 </div>
 <mat-card class="example-card">
   <mat-card-header>
-    <mat-card-title><h2>{{book.title}}</h2></mat-card-title>
-    <mat-card-subtitle>{{book.description}}</mat-card-subtitle>
+    <mat-card-title><h2>{{book.nombre}}</h2></mat-card-title>
+    <mat-card-subtitle>{{book.apoyo_solicitado}}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
     <dl>
-      <dt>ISBN:</dt>
-      <dd>{{book.isbn}}</dd>
-      <dt>Author:</dt>
-      <dd>{{book.author}}</dd>
-      <dt>Publisher:</dt>
-      <dd>{{book.publisher}}</dd>
-      <dt>Publish Year:</dt>
-      <dd>{{book.published_year}}</dd>
-      <dt>Update Date:</dt>
-      <dd>{{book.updated_date | date}}</dd>
+      <dt>Id:</dt>
+      <dd>{{book.id}}</dd>
+      <dt>Telefono:</dt>
+      <dd>{{book.telefono}}</dd>
+      <dt>Domicilio:</dt>
+      <dd>{{book.domicilio}}</dd>
+      <dt>Sexo:</dt>
+      <dd>{{book.sexo}}</dd>
+      <dt>Estado civil:</dt>
+      <dd>{{book.estado_civil}}</dd>
+      <dt>Ocupacion:</dt>
+      <dd>{{book.ocupacion}}</dd>
+      <dt>Correo:</dt>
+      <dd>{{book.correo}}</dd>
     </dl>
   </mat-card-content>
   <mat-card-actions>

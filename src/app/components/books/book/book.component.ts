@@ -11,7 +11,7 @@ import * as jsPDF from 'jspdf';
 export class BookComponent implements OnInit {
 
   books: any;
-  displayedColumns = ['isbn', 'title', 'author'];
+  displayedColumns = ['id','domicilio', 'nombre', 'telefono'];
   dataSource = new BookDataSource(this.api);
 
   constructor(private api: ApiService) { }
@@ -39,7 +39,7 @@ export class BookComponent implements OnInit {
   }
 
   exportAsXLSX(): void {
-    this.api.exportAsExcelFile(this.books, 'Books');
+    this.api.exportAsExcelFile(this.books, 'Encuesta');
   }
 }
 

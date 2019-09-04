@@ -1,12 +1,18 @@
 var mongoose = require('mongoose');
 
 var BookSchema = new mongoose.Schema({
-  isbn: String,
-  title: String,
-  author: String,
-  description: String,
-  published_year: String,
-  publisher: String,
+  id: String,
+  nombre: String,
+  sexo: String,
+  edad: String,
+  estado_civil: String,
+  telefono: String,
+  escolaridad: String,
+  ocupacion: String,
+  domicilio: String,
+  correo: String,
+  apoyo_solicitado: String,
+  fecha : String,
   updated_date: { type: Date, default: Date.now },
 });
 
