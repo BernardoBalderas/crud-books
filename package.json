@@ -6,7 +6,7 @@
     "start": "ng build && node ./bin/www",
     "build": "ng build",
     "test": "ng test",
-    "postinstall": "ng",
+    "heroku-postbuild": "ng",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
