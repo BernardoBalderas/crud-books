@@ -598,8 +598,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Bernardo\Desktop\CRUD-BOOKS-ANGULAR\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
-module.exports = __webpack_require__(/*! C:\Users\Bernardo\Desktop\CRUD-BOOKS-ANGULAR\src\styles.css */"./src/styles.css");
+__webpack_require__(/*! C:\Users\Bernardo\Desktop\crud-encuestas-angular\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
+module.exports = __webpack_require__(/*! C:\Users\Bernardo\Desktop\crud-encuestas-angular\src\styles.css */"./src/styles.css");
 
 
 /***/ })

@@ -31,7 +31,7 @@ export class BookDetailComponent implements OnInit {
   deleteBook(id) {
     this.api.deleteBook(id)
       .subscribe(res => {
-        this.router.navigate(['/books']);
+        this.router.navigate(['/encuestas']);
       }, (err) => {
         console.log(err);
       }

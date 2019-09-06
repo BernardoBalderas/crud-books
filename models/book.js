@@ -13,6 +13,12 @@ var BookSchema = new mongoose.Schema({
   correo: String,
   apoyo_solicitado: String,
   fecha : String,
+  lugar_trabajo: String,
+  puesto: String,
+  salario: String,
+  otros_ingresos: String,
+  total_ingresos: String,
+  observaciones: String,
   updated_date: { type: Date, default: Date.now },
 });
 

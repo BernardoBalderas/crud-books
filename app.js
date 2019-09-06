@@ -12,10 +12,10 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'dist')));
-app.use('/books', express.static(path.join(__dirname, 'dist')));
-app.use('/book-details/:id', express.static(path.join(__dirname, 'dist')));
-app.use('/book-create', express.static(path.join(__dirname, 'dist')));
-app.use('/book-edit/:id', express.static(path.join(__dirname, 'dist')));
+app.use('/encuestas', express.static(path.join(__dirname, 'dist')));
+app.use('/encuesta-details/:id', express.static(path.join(__dirname, 'dist')));
+app.use('/encuesta-create', express.static(path.join(__dirname, 'dist')));
+app.use('/encuesta-edit/:id', express.static(path.join(__dirname, 'dist')));
 app.use('/api', apiRouter);
 
 // catch 404 and forward to error handler

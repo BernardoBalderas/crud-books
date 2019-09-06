@@ -23,6 +23,12 @@ export class BookEditComponent implements OnInit {
   correo: string = '';
   apoyo_solicitado: string = '';
   fecha: string = '';
+  lugar_trabajo: string = '';
+  puesto: string = '';
+  salario: string = '';
+  otros_ingresos: string = '';
+  total_ingresos: string = '';
+  observaciones: string = '';
 
   constructor(
     private router: Router,
@@ -44,7 +50,14 @@ export class BookEditComponent implements OnInit {
       'telefono': [null, Validators.required],
       'correo': [null, Validators.required],
       'apoyo_solicitado': [null, Validators.required],
-      'fecha': [null, Validators.required]
+      'fecha': [null, Validators.required],
+      'lugar_trabajo': [null, Validators.required],
+      'puesto': [null, Validators.required],
+      'salario': [null, Validators.required],
+      'otros_ingresos': [null, Validators.required],
+      'total_ingresos': [null, Validators.required],
+      'observaciones': [null, Validators.required]
+
     });
   }
 
@@ -62,7 +75,14 @@ export class BookEditComponent implements OnInit {
         domicilio: data.domicilio,
         telefono: data.telefono,
         correo: data.correo,
-        apoyo_solicitado: data.apoyo_solicitado
+        apoyo_solicitado: data.apoyo_solicitado,
+        lugar_trabajo: data.lugar_trabajo,
+        puesto: data.puesto,
+        salario: data.salario,
+        otros_ingresos: data.otros_ingresos,
+        total_ingresos: data.total_ingresos,
+        observaciones: data.observaciones
+        
         
       });
     });

@@ -1,5 +1,5 @@
 <div class="button-row">
-  <a mat-raised-button color="primary" [routerLink]="['/books']"><mat-icon>list</mat-icon></a>
+  <a mat-raised-button color="primary" [routerLink]="['/encuestas']"><mat-icon>list</mat-icon></a>
 </div>
 <mat-card class="example-card">
   <mat-card-header>
@@ -22,10 +22,22 @@
       <dd>{{book.ocupacion}}</dd>
       <dt>Correo:</dt>
       <dd>{{book.correo}}</dd>
+      <dt>Lugar de trabajo:</dt>
+      <dd>{{book.lugar_trabajo}}</dd>
+      <dt>Puesto:</dt>
+      <dd>{{book.puesto}}</dd>
+      <dt>Sakario:</dt>
+      <dd>{{book.salario}}</dd>
+      <dt>Otros ingresos:</dt>
+      <dd>{{book.otros_ingresos}}</dd>
+      <dt>Total de ingresos:</dt>
+      <dd>{{book.total_ingresos}}</dd>
+      <dt>Observaciones:</dt>
+      <dd>{{book.observaciones}}</dd>
     </dl>
   </mat-card-content>
   <mat-card-actions>
-    <a mat-raised-button color="primary" [routerLink]="['/book-edit', book._id]"><mat-icon>edit</mat-icon></a>
+    <a mat-raised-button color="primary" [routerLink]="['/encuesta-edit', book._id]"><mat-icon>edit</mat-icon></a>
     <a mat-raised-button color="warn" (click)="deleteBook(book._id)"><mat-icon>delete</mat-icon></a>
   </mat-card-actions>
 </mat-card>

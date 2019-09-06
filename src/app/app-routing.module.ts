@@ -11,22 +11,22 @@ import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 
 const routes: Routes = [
   {
-    path: 'books',
+    path: 'encuestas',
     component: BookComponent,
     data: { title: 'Book List' }
   },
   {
-    path: 'book-details/:id',
+    path: 'encuesta-details/:id',
     component: BookDetailComponent,
     data: { title: 'Book Details' }
   },
   {
-    path: 'book-create',
+    path: 'encuesta-create',
     component: BookCreateComponent,
     data: { title: 'Create Book' }
   },
   {
-    path: 'book-edit/:id',
+    path: 'encuesta-edit/:id',
     component: BookEditComponent,
     data: { title: 'Edit Book' }
   },

@@ -23,7 +23,13 @@ export class BookCreateComponent implements OnInit {
   correo: string = '';
   apoyo_solicitado: string = '';
   fecha: string = '';
-  published_year: string ='';
+  published_year: string = '';
+  lugar_trabajo: string = '';
+  puesto: string = '';
+  salario: string = '';
+  otros_ingresos: string = '';
+  total_ingresos: string = '';
+  observaciones: string = '';
 
   constructor(
     private router: Router,
@@ -44,7 +50,13 @@ export class BookCreateComponent implements OnInit {
       'correo': [null, Validators.required],
       'apoyo_solicitado': [null, Validators.required],
       'fecha': [null, Validators.required],
-      'published_year': [null, Validators.required]
+      'published_year': [null, Validators.required],
+      'lugar_trabajo': [null, Validators.required],
+      'puesto': [null, Validators.required],
+      'salario': [null, Validators.required],
+      'otros_ingresos': [null, Validators.required],
+      'total_ingresos': [null, Validators.required],
+      'observaciones': [null, Validators.required]
     });
   }
 
@@ -52,7 +64,7 @@ export class BookCreateComponent implements OnInit {
     this.api.postBook(form)
       .subscribe(res => {
         let id = res['_id'];
-        this.router.navigate(['/book-details', id]);
+        this.router.navigate(['/encuesta-details', id]);
       }, (err) => {
         console.log(err);
       });
