@@ -2,6 +2,9 @@
   <a mat-raised-button color="primary" [routerLink]="['/encuesta-create']">
     <mat-icon>add</mat-icon>
   </a>
+  <a class="download-pdf" mat-raised-button color="warn" (click)="onGeneratePDF()">
+    Generate PDF
+  </a>
   <button class="download-excel" mat-raised-button (click)="exportAsXLSX()">
     Generate Excel
   </button>

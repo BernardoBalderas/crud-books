@@ -33,9 +33,9 @@ export class BookComponent implements OnInit {
       unit: 'pt',
       format: 'carta'
     });
-    pdf.text('Books List', 180, 10);
+    pdf.text('Encuesta List', 180, 10);
     pdf.fromHTML(id, 100, 15);
-    pdf.save('Books-' + new Date().getTime() + '.pdf');
+    pdf.save('Encuesta-' + new Date().getTime() + '.pdf');
   }
 
   exportAsXLSX(): void {
