@@ -2,10 +2,12 @@
   "name": "books-app",
   "version": "0.0.0",
   "scripts": {
+    "ng": "ng",
     "start": "ng build && node ./bin/www",
+    "dev":"ng build && node ./bin/www",
+    "postinstall": "ng build --prod",
     "build": "ng build",
     "test": "ng test",
-    "postinstall": "ng build",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -62,7 +64,7 @@
     "typescript": "~3.4.3"
   },
   "engines": {
-    "node": "12.3.1",
+    "node": "10.16.1",
     "npm": "6.9.0"
   }
 }
